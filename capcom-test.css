@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  height: 5000px;
+  
+}
+
+p {
+  margin: 0;
+  display: inline;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.cap-logo {
+  width: 160px;
+}
+
+.intro {
+  display: flex;
+  position: relative;
+  background-image:url('img/mh-wilds.jpg');
+  background-repeat: no-repeat;
+  height: 95vh;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.mh-logo {
+  position: absolute;
+  max-width: 28rem;
+  left: 20px;
+  bottom: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+  .mh-logo {
+    width: 40%;  
+  }
+  
+}
+
+.intro-text {
+  position: absolute;
+  font-family: Bebas Neue, Arial;
+  font-size: 6.5em;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.intro-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(219, 166, 166);
+}
+
+@media screen and (max-width:1000px) {
+  .games {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+}
+.game-link {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.game-link img {
+  width: 100%;
+  transition: 0.5s;
+  vertical-align: bottom
+}
+
+.game-cover:hover {
+  scale: 102%;
+  opacity: 0.8;
+}
+
+.socials {
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  height: 20vh;
+  color: black;
+  font-family: Bebas Neue, Arial;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+
+
+.twitter-button {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-family: Bebas Neue, Arial;
+  border-radius: 20px;
+  border: none;
+  margin-left: 50px;
+  padding: 5px 15px 5px 15px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.twitter-button:hover {
+  scale: 105%;
+}
+
+@media screen and (max-width:1000px){
+  .socials {
+  flex-direction: column;
+  }
+
+  .twitter-button {
+    margin: 0;
+  }
+
+  
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  padding: 150px 0 150px 0;
+  /*background-color: red;*/
+  justify-content: center;
+  
+}
+
+.footer img {
+  width: 15em;
+}
